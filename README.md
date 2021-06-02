@@ -50,3 +50,7 @@ def cross_product(a1, a2, a3, b1, b2, b3):
     y = round(((a3 * b1) - (a1 * b3)), 3)
     z = round(((a1 * b2) - (a2 * b1)), 3)
     print('<', x, ',', y, ',', z, '>')
+
+# finds area of parallelogram (3d) given vectors a = <a1, a2, a3> and b = <b1, b2, b3>
+def area_Parallelogram(a1, a2, a3, b1, b2, b3):
+    three_d_magnitude((a2 * b3) - (a3 * b2), (a3 * b1) - (a1 * b3), (a1 * b2) - (a2 * b1))
